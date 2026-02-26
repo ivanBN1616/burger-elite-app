@@ -5,7 +5,7 @@
       <p class="text-gray-300 mb-8">Sniping a velocidad de la luz. Seguridad de grado militar.</p>
       <button class="glitch-btn px-10 py-4 text-lg font-pixel">Get Started</button>
       <div class="mt-10">
-        <img src="/assets/placeholder-nft.png" alt="Burger Sniper NFT" class="mx-auto w-80 opacity-80 rounded-lg shadow-2xl">
+        <img src="/assets/placeholder-nft.svg" alt="Burger Sniper NFT" class="mx-auto w-80 opacity-80 rounded-lg shadow-2xl">
       </div>
     </div>
   </section>
