@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom cyberpunk styles */
+:root{
+  --neon-green: #00FF7F;
+  --fuchsia: #FF00FF;
+  --bg-dark: #030307; /* darker background for stronger contrast */
+  --panel-bg: rgba(10,10,12,0.72);
+  --panel-border: rgba(255,255,255,0.04);
+  --muted: #9ca3af;
+  --text: #e6fff2;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  background-color: var(--bg-dark);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Stronger glass panel for dark mode */
+.glass-effect {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.28));
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6), 0 0 24px rgba(0,255,127,0.03) inset;
+}
+
+/* Buttons: improved contrast + neon outline */
+.glitch-btn {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, var(--neon-green), #a100ff);
+  color: #050508;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 4px 18px rgba(0,255,127,0.08), 0 0 8px rgba(161,0,255,0.06);
+}
+.glitch-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(0,255,127,0.12), 0 0 18px rgba(161,0,255,0.12);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: var(--text);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+p, li, a, span, div {
+  color: var(--text);
+}
+
+a { color: var(--neon-green); }
+
+/* Cards and panels */
+.card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+/* CRT overlay, subtle */
+.crt::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,255,0,0.02) 1px);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.06;
+}
+
+/* Utility tweaks for better readability */
+.text-muted { color: var(--muted); }
+.shadow-neon { box-shadow: 0 8px 30px rgba(255,0,255,0.08); }
+
+/* Make tables more legible */
+table { border-collapse: collapse; }
+th, td { padding: 0.6rem 0.8rem; }
+thead th { color: var(--neon-green); text-transform: uppercase; font-size: 0.75rem; }
+tbody tr { border-top: 1px solid rgba(255,255,255,0.03); }
+
