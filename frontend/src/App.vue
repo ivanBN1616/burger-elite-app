@@ -1,12 +1,12 @@
 <template>
   <div id="app" class="min-h-screen">
-    <Navbar />
+    <TheHeader />
     <HomeView />
   </div>
 </template>
 
 <script setup>
-import Navbar from './components/Navbar.vue'
+import TheHeader from './components/TheHeader.vue'
 import HomeView from './views/HomeView.vue'
 </script>
 

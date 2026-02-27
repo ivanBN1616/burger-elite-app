@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom cyberpunk styles */
+/* Burger Elite Cyberpunk Branding */
 :root{
-  --neon-green: #00FF7F;
+  --neon-green: #00ff88;
+  --brand-green: #00ff88;
   --fuchsia: #FF00FF;
-  --bg-dark: #000000; /* Pure black like Photon */
+  --bg-dark: #020202;
+  --brand-black: #020202;
+  --brand-zinc: #18181b;
   --panel-bg: rgba(255,255,255,0.02);
   --panel-border: rgba(255,255,255,0.1);
   --muted: #888888;
@@ -22,6 +25,55 @@ body{
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+/* CRT Scanlines texture (Cyberpunk subtle effect) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  opacity: 0.02;
+  z-index: 9999;
+}
+
+/* Animated Grid Background */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: gridMove 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes gridMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
+
+/* Content above grid */
+#app {
+  position: relative;
+  z-index: 1;
 }
 
 /* Use Inter with light weight for enterprise elegance */
@@ -42,7 +94,17 @@ body, input, button, textarea {
   -webkit-backdrop-filter: blur(24px);
 }
 
-/* Enterprise CTA button with subtle glow */
+/* Neon Text Shadow Utility */
+.text-shadow-neon {
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.8), 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+/* Box Shadow Neon Utility */
+.box-shadow-neon {
+  box-shadow: 0 0 5px rgba(0, 255, 136, 0.5), 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+/* Enterprise CTA button with neon glow */
 .glitch-btn {
   position: relative;
   display: inline-block;
@@ -57,8 +119,18 @@ body, input, button, textarea {
 }
 .glitch-btn:hover {
   background: rgba(255,255,255,1);
-  box-shadow: 0 4px 12px rgba(255,255,255,0.15), 0 0 20px rgba(0,255,127,0.1);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.15), 0 0 20px rgba(0, 255, 136, 0.3);
   transform: translateY(-1px);
+}
+
+/* Pulsing Green Indicator */
+.pulse-green {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 /* Headings */
