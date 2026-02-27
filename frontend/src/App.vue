@@ -13,7 +13,7 @@ import HomeView from './views/HomeView.vue'
 <style>
 #app { 
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background-color: #020202;
-  color: #e0e0e0;
+  background-color: #000000;
+  color: #ffffff;
 }
 </style>

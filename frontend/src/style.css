@@ -6,11 +6,11 @@
 :root{
   --neon-green: #00FF7F;
   --fuchsia: #FF00FF;
-  --bg-dark: #020202; /* Photon-style nearly black */
+  --bg-dark: #000000; /* Pure black like Photon */
   --panel-bg: rgba(255,255,255,0.02);
   --panel-border: rgba(255,255,255,0.1);
   --muted: #888888;
-  --text: #e0e0e0;
+  --text: #ffffff;
 }
 
 html, body {

@@ -1,9 +1,9 @@
 <template>
-  <section id="docs" class="py-24 bg-gradient-to-b from-transparent via-white/[0.01] to-transparent">
+  <section id="docs" class="py-32">
     <div class="max-w-7xl mx-auto px-8">
-      <div class="mb-16">
-        <h2 class="text-4xl font-light mb-4">Documentation</h2>
-        <p class="text-gray-500 text-lg font-light">Everything you need to integrate and deploy</p>
+      <div class="mb-20 text-center">
+        <h2 class="text-6xl font-light mb-6">The Burger Elite Ecosystem</h2>
+        <p class="text-gray-500 text-xl font-light">Everything you need to integrate and deploy</p>
       </div>
       
       <div class="grid md:grid-cols-3 gap-6">

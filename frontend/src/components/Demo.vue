@@ -1,9 +1,9 @@
 <template>
-  <section id="demo" class="py-24 bg-gradient-to-b from-transparent via-white/[0.01] to-transparent">
+  <section id="demo" class="py-32">
     <div class="max-w-4xl mx-auto px-8">
-      <div class="mb-12 text-center">
-        <h2 class="text-4xl font-light mb-4">Live Simulation</h2>
-        <p class="text-gray-500 text-lg font-light">Watch Antigravity detect and reject malicious tokens in real-time</p>
+      <div class="mb-16 text-center">
+        <h2 class="text-6xl font-light mb-6">Live Simulation</h2>
+        <p class="text-gray-500 text-xl font-light">Watch Antigravity detect and reject malicious tokens in real-time</p>
       </div>
       
       <div class="p-8 rounded-lg border border-white/10 glass-effect">

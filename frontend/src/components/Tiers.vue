@@ -1,9 +1,9 @@
 <template>
-  <section id="tiers" class="py-24">
+  <section id="tiers" class="py-32">
     <div class="max-w-7xl mx-auto px-8">
-      <div class="mb-16">
-        <h2 class="text-4xl font-light mb-4">Infrastructure Solutions</h2>
-        <p class="text-gray-500 text-lg font-light">Choose a solution aligned with your scale</p>
+      <div class="mb-20 text-center">
+        <h2 class="text-6xl font-light mb-6">Fast Sniping for<br/>Any Scale</h2>
+        <p class="text-gray-500 text-xl font-light">From solo traders to institutional funds</p>
       </div>
       
       <div class="grid md:grid-cols-3 gap-6">

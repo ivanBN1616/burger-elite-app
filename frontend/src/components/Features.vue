@@ -1,9 +1,9 @@
 <template>
-  <section id="features" class="py-24">
+  <section id="features" class="py-32">
     <div class="max-w-7xl mx-auto px-8">
-      <div class="mb-16">
-        <h2 class="text-4xl font-light mb-4">Core Infrastructure</h2>
-        <p class="text-gray-500 text-lg font-light">Built for speed, security, and scale</p>
+      <div class="mb-20 text-center">
+        <h2 class="text-6xl font-light mb-6">The Most Trusted<br/>Sniping Service</h2>
+        <p class="text-gray-500 text-xl font-light">Over 12,000 tokens scanned daily in our global infrastructure</p>
       </div>
       
       <div class="grid md:grid-cols-3 gap-8">

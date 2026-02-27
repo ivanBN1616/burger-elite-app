@@ -1,9 +1,9 @@
 <template>
-  <section class="py-24">
-    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+  <section class="py-32">
+    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
       <div>
-        <h3 class="text-4xl font-light mb-6">Powered by Antigravity</h3>
-        <p class="text-gray-400 font-light leading-relaxed mb-8">Our proprietary security layer inspects every order before execution. Multi-signal filtering with on-chain heuristics and reputation analysis.</p>
+        <h3 class="text-5xl font-light mb-8 leading-tight">Powered by Antigravity</h3>
+        <p class="text-xl text-gray-400 font-light leading-relaxed mb-10">Our proprietary security layer inspects every order before execution. Multi-signal filtering with on-chain heuristics and reputation analysis.</p>
         <ul class="space-y-4">
           <li class="flex items-start">
             <div class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
