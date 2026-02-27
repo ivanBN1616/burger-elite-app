@@ -1,26 +1,48 @@
 <template>
-  <section class="py-12">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
       <div>
-        <h3 class="font-pixel text-2xl text-fuchsia-400 mb-2">Powered by Antigravity</h3>
-        <p class="text-muted mb-4">Nuestro filtro de seguridad inspecciona cada orden antes de enviarla a la red. Filtrado por señales, reputación y heurísticas on-chain.</p>
-        <ul class="text-sm text-muted space-y-2">
-          <li>• Multi-layer checks (heuristics, Mempool, Helius)</li>
-          <li>• Real-time anomaly detection</li>
-          <li>• Fail-safe abort antes de cualquier ejecución sospechosa</li>
+        <h3 class="text-4xl font-light mb-6">Powered by Antigravity</h3>
+        <p class="text-gray-400 font-light leading-relaxed mb-8">Our proprietary security layer inspects every order before execution. Multi-signal filtering with on-chain heuristics and reputation analysis.</p>
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <div class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+              <div class="w-2 h-2 rounded-full bg-white"></div>
+            </div>
+            <div>
+              <div class="text-sm font-normal mb-1">Multi-layer validation</div>
+              <div class="text-sm text-gray-500 font-light">Heuristics, mempool analysis, and Helius data aggregation</div>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+              <div class="w-2 h-2 rounded-full bg-white"></div>
+            </div>
+            <div>
+              <div class="text-sm font-normal mb-1">Real-time detection</div>
+              <div class="text-sm text-gray-500 font-light">Continuous anomaly monitoring across all transactions</div>
+            </div>
+          </li>
+          <li class="flex items-start">
+            <div class="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+              <div class="w-2 h-2 rounded-full bg-white"></div>
+            </div>
+            <div>
+              <div class="text-sm font-normal mb-1">Fail-safe abort</div>
+              <div class="text-sm text-gray-500 font-light">Automatic rejection of suspicious execution patterns</div>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="card p-6 flex items-center justify-center">
-        <!-- Simple SVG diagram placeholder -->
-        <svg width="320" height="180" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="0" width="320" height="180" rx="8" fill="#020204" stroke="#0b0b0c" />
-          <g fill="none" stroke="#00FF7F" stroke-width="2">
-            <path d="M10 90 L90 30 L170 90 L250 30 L310 90" stroke-opacity="0.18"/>
-            <circle cx="90" cy="30" r="6" fill="#00FF7F"/>
-            <circle cx="170" cy="90" r="6" fill="#FF00FF"/>
-            <circle cx="250" cy="30" r="6" fill="#00FF7F"/>
+      <div class="p-8 rounded-lg border border-white/10 glass-effect flex items-center justify-center">
+        <svg width="400" height="240" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1">
+            <path d="M20 120 L120 40 L220 120 L320 40 L380 120" stroke-opacity="0.3"/>
+            <circle cx="120" cy="40" r="8" fill="rgba(0,255,127,0.3)" stroke="rgba(0,255,127,0.5)" stroke-width="2"/>
+            <circle cx="220" cy="120" r="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            <circle cx="320" cy="40" r="8" fill="rgba(0,255,127,0.3)" stroke="rgba(0,255,127,0.5)" stroke-width="2"/>
           </g>
-          <text x="160" y="160" font-size="11" text-anchor="middle" fill="#9ca3af">Traffic passes through Antigravity filter</text>
+          <text x="200" y="220" font-size="12" text-anchor="middle" fill="#666" font-weight="300">Traffic flow through Antigravity filter</text>
         </svg>
       </div>
     </div>
@@ -31,6 +53,4 @@
 </script>
 
 <style scoped>
-.text-muted { color: rgba(230,255,242,0.7); }
-.card { background: rgba(10,10,12,0.7); border-radius: 8px; }
 </style>

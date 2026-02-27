@@ -1,20 +1,20 @@
 <template>
-  <section class="py-8">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="card text-center">
-        <div class="text-sm text-muted">Solana TPS</div>
-        <div class="text-3xl font-bold text-green-300">2,500</div>
-        <div class="text-sm text-muted mt-1">Live network throughput</div>
+  <section class="py-16 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div>
+        <div class="text-xs text-gray-500 uppercase tracking-wider mb-2">Solana TPS</div>
+        <div class="text-4xl font-light mb-1">2,500</div>
+        <div class="text-sm text-gray-500">Live network throughput</div>
       </div>
-      <div class="card text-center">
-        <div class="text-sm text-muted">Average Execution Speed</div>
-        <div class="text-3xl font-bold text-green-300">120 ms</div>
-        <div class="text-sm text-muted mt-1">From signal to execution</div>
+      <div>
+        <div class="text-xs text-gray-500 uppercase tracking-wider mb-2">Execution Speed</div>
+        <div class="text-4xl font-light mb-1">120<span class="text-lg text-gray-500 ml-1">ms</span></div>
+        <div class="text-sm text-gray-500">Signal to execution</div>
       </div>
-      <div class="card text-center">
-        <div class="text-sm text-muted">Tokens Analizados Hoy</div>
-        <div class="text-3xl font-bold text-fuchsia-400">12,342</div>
-        <div class="text-sm text-muted mt-1">Scan pipeline throughput</div>
+      <div>
+        <div class="text-xs text-gray-500 uppercase tracking-wider mb-2">Tokens Today</div>
+        <div class="text-4xl font-light mb-1">12,342</div>
+        <div class="text-sm text-gray-500">Scan pipeline throughput</div>
       </div>
     </div>
   </section>
@@ -24,6 +24,4 @@
 </script>
 
 <style scoped>
-.card { padding: 1rem; border-radius: 0.5rem; }
-.text-muted { color: rgba(230,255,242,0.7); }
 </style>

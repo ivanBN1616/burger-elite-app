@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen text-green-300">
+  <div id="app" class="min-h-screen">
     <Navbar />
     <HomeView />
   </div>
@@ -11,7 +11,9 @@ import HomeView from './views/HomeView.vue'
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&display=swap');
-
-#app { font-family: 'Roboto Mono', monospace; }
+#app { 
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: #020202;
+  color: #e0e0e0;
+}
 </style>
